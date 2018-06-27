@@ -1,0 +1,180 @@
+/****** BASE STYLES ******/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#about, #work, #contact {
+    height: 600px;
+}
+
+/****** GRID ******/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.half-width {
+    width: 50%;
+    float: left;
+}
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/****** HEADER ******/
+#lehua-logo{
+    max-width: 10%;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+header {
+    height: 800px;
+    background: url('../img/hero.jpg');
+    background-size: cover;
+    padding: 0 30px;
+}
+
+header h1 { 
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #5fc681;
+}
+
+header h2 {
+    width: 1000px;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    color: #9b9b9b;
+    padding: 100px 0 20px 0;
+}
+header h2 span {
+    color: #2b2b2b;
+}
+
+nav {
+    padding: 30px 0 0 320px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    color: #5fc681;
+    font-weight: bold;
+    padding-left: 80px; 
+}
+}
+
+/****** ABOUT ******/
+
+#about{
+    height: 1000px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px 0 20px;
+}
+
+#about .full-width {
+    padding: 80px 0;
+}
+
+#about .half-width{
+    display: block;
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+#about p {
+    font-size: 21px;
+    color: #7f7f7f;
+    line-height: 42px;
+}
+
+/****** WORK ******/
+
+#work {
+    background-color: #97e5b1;
+    text-align: center;
+    height: 750px;
+}
+
+#work .full-width {
+    padding: 115px 0;
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-size: 24px;
+    width: 190px;
+    margin: 0 auto;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2b2b2b;
+    padding: 0 35px;
+}
+
+/****** CONTACT ******/
+
+#contact {
+    background-color: #ebebeb;
+}
+#contact .full-width {
+    padding: 110px 0;
+}
+#contact-img{
+    border: 12px solid #ffffff;
+    max-width: 85%;
+}
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+#envelope {
+    padding: 0 10px 0 115px;
+}
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+#email-header{
+    font-size: 32px;
+    font-weight: 400;
+    margin: -30px 0 5px 0;
+}
+#socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    margin: 40px 0 0px 0;
+}
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
+
