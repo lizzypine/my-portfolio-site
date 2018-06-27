@@ -1,0 +1,334 @@
+/* Base Styles ========================================= */
+*{
+    font-family: "Courier New", Courier, monospace;
+    color: #0B1522;
+    background-color: #fdfef7;
+}
+
+h1{
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 25px;
+    font-family: "chivo";
+}
+
+.arrow-up{
+    padding: 50px 0;
+}
+
+img.up{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid ========================================= */
+.full-width{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+/* Home ========================================= */
+.topnav {
+    background-color: #0B1522;
+    overflow: hidden;
+}
+
+.topnav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0B1522;
+}
+
+.topnav li{
+    display: block;
+}
+
+.topnav li a {
+    display: block;
+    background-color: #0B1522;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #fdfef7;
+    color: black;
+}
+
+#header #img-mobile{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 15px;
+}
+
+#header #img-tablet-desktop{
+    display: none
+}
+
+/* Work ============================================ */
+#work img{
+    width: 80%;
+    margin-bottom: 25px;
+    border: 6px solid #0B1522;
+}
+
+#work img.up{
+    width: 10%;
+    border: none;
+}
+
+/* Services ========================================= */
+#services .service-item{
+    clear: both;
+    display: block;
+    margin: 50px 15px 10px 30px;
+    text-align: center;
+
+}
+#services img{
+    width: 20%;
+}
+
+#services img.up{
+    width: 10%;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services .arrow-up{
+    height: 500px;
+}
+
+/* Contact ========================================= */
+#contact{
+    height: 800px;
+}
+
+#contact h1{
+    padding-top: 10px;
+}
+
+#contact p{
+    color: #595959;
+    text-align: center;
+}
+
+#contact ul{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+}
+
+#contact li{
+    display: inline;
+    float: left;
+}
+
+#gmail{
+    padding-right: 20px;
+}
+
+#contact ul{
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+#contact img.up{
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+/* Footer ========================================= */
+footer p{
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    margin-left 0;
+    margin-right: 0;    
+}
+
+/* Media Queries ========================================= */
+
+/* TABLET =========================== */
+
+/*Tablet Version Home ==========*/
+@media (min-width:768px){
+#header #img-mobile{
+    display: none;
+}
+
+#header #img-tablet-desktop{
+    display: block;
+    max-width: 100%;
+    padding: 100px 0 350px 0;
+}
+
+.topnav {
+    background-color: #0B1522;
+    overflow: hidden;
+}
+
+.topnav li{
+    display: inline;
+    float: left;
+}
+
+img.up{
+    display: block;
+}
+
+/*Tablet Version Work ==========*/
+#work img{
+    display: inline;
+    width: 40%;
+}
+
+#work img.up{
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    padding:  0 0 200px 0;
+}
+
+/*Tablet Version Services ==========*/
+#services .service-item{
+    width: 40%;
+    margin: 0 auto;
+}
+
+#services img.up{
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    padding:  0 0 200px 0;
+}
+
+}
+
+/*Tablet Version Contact ==========*/
+#contact img.up{
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    padding:  0 0 0 0;
+}
+
+/* DESKTOP =========================== */
+
+/* Desktop Version Home =========================== */
+@media (min-width:940px){
+#home .full-width img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 175px 0;
+}
+
+#header #img-tablet-desktop{
+    display: block;
+    max-width: 100%;
+    padding: 0px 0 350px 0;
+}
+
+img.up{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Desktop Version Work =========================== */
+#work img{
+    display: inline;
+    max-width: 350px;
+    margin: 10px;
+}
+
+#work img.up{
+    width: 5%;
+    border: none;
+}
+
+/* Desktop Version Services =========================================*/
+#services .service-item{
+    display: inline-block;
+    max-width: 266px;
+    margin: 0 15px;
+    height: 450px;
+    vertical-align: top;
+}
+
+#services img{
+    width: 40%;
+}
+
+#web-development{
+    height: 87px;
+    width: auto; 
+}
+
+#website-management{
+    height: 87px;
+    width: auto; 
+}
+
+#services img.up{
+    display: block;
+    margin: 0 auto;
+    width: 5%;
+    padding:  0 0 100px 0;
+}
+
+
+/* Contact Version Services =========================================*/
+#contact{
+    height: 600px;
+}
+
+#contact img.up{
+    display: block;
+    margin: 0 auto;
+    width: 5%;
+    padding:  0 0 100px 0;
+}
+}
