@@ -85,7 +85,7 @@ img.up{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0 0 15px;
+    padding-bottom: 45px;
 }
 
 #header #img-tablet-desktop{
@@ -196,7 +196,9 @@ footer p{
 #header #img-tablet-desktop{
     display: block;
     max-width: 100%;
-    padding: 100px 0 350px 0;
+    padding-top: 4.5em;
+    padding-bottom: 16em;
+    /* vertical-align: middle; */
 }
 
 .topnav {
@@ -238,7 +240,6 @@ img.up{
     width: 8%;
     padding:  0 0 200px 0;
 }
-
 }
 
 /*Tablet Version Contact ==========*/
@@ -253,20 +254,6 @@ img.up{
 
 /* Desktop Version Home =========================== */
 @media (min-width:940px){
-#home .full-width img{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0 175px 0;
-}
-
-#header #img-tablet-desktop{
-    display: block;
-    max-width: 100%;
-    padding: 0px 0 350px 0;
-}
-
 img.up{
     display: block;
     margin: 0 auto;
@@ -281,11 +268,13 @@ img.up{
 #work img{
     display: inline;
     max-width: 350px;
-    margin: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
 }
 
 #work img.up{
-    width: 5%;
+    width: 3%;
     border: none;
 }
 
@@ -293,7 +282,9 @@ img.up{
 #services .service-item{
     display: inline-block;
     max-width: 266px;
-    margin: 0 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
     height: 450px;
     vertical-align: top;
 }
@@ -307,6 +298,10 @@ img.up{
     width: auto; 
 }
 
+#web-development-text{
+    padding-top: 33px;
+}
+
 #website-management{
     height: 87px;
     width: auto; 
@@ -315,7 +310,7 @@ img.up{
 #services img.up{
     display: block;
     margin: 0 auto;
-    width: 5%;
+    width: 3%;
     padding:  0 0 100px 0;
 }
 
@@ -328,7 +323,7 @@ img.up{
 #contact img.up{
     display: block;
     margin: 0 auto;
-    width: 5%;
+    width: 3%;
     padding:  0 0 100px 0;
 }
 }
