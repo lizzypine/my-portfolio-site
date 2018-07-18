@@ -8,12 +8,7 @@ $(document).ready(function(){
         triggerHook: 0.9,
         })
     .setClassToggle('#work', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        indent: 200,
-        colorStart: 'pink'
-        })
+
     .addTo(controller);
 
     //Build a scene for #services
@@ -22,12 +17,7 @@ $(document).ready(function(){
         triggerHook: 0.9,
         })
     .setClassToggle('#services', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        indent: 200,
-        colorStart: 'pink'
-        })
+
     .addTo(controller);
 
     //Build a scene for #contact
@@ -36,27 +26,8 @@ $(document).ready(function(){
         triggerHook: 0.9,
         })
     .setClassToggle('#contact', 'fade-in')
-    .addIndicators({
-        name: 'fade scene',
-        colorTrigger: 'black',
-        indent: 200,
-        colorStart: 'pink'
-        })
-    .addTo(controller);
 
-    // //Build a scene for .footer
-    // var ourScene = new ScrollMagic.Scene({
-    //     triggerElement: '.footer',
-    //     triggerHook: 0.9,
-    //     })
-    // .setClassToggle('.footer', 'fade-in')
-    // .addIndicators({
-    //     name: 'fade scene',
-    //     colorTrigger: 'black',
-    //     indent: 200,
-    //     colorStart: 'pink'
-    //     })
-    // .addTo(controller);
+    .addTo(controller);
 
 });
 
