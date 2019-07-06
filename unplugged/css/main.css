@@ -160,51 +160,88 @@ input.btn{
 }
 
 /* Header =========================== */
-.main-header {
-	width: 100%;
-	margin: auto;
-	background-color: #eee;
-}
 #lehua-logo{
 	max-width: 10%;
 	margin: 0 auto;
 	padding: 20px 0;
 }
 
-#logo {
-	width: 100%;
-	margin: 0 auto;
+.main-header {
+	width: 96%;
+	margin: auto;
+	background-color: #222;
 }
 
-	#logo img{
-		width: 100%; 
-		margin:auto;
-	}
-	
-nav {
-	width: 100%;
-	background: #ddd;
+#unplugged-logo{
+	max-width: 100%;
+	margin: auto;
 }
-	nav ul {
+
+#unplugged-logo-tablet{
+	display: none;
+}
+
+.nav-logo{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background: #222;
+	align-items: center;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.nav-menu{
+	width: 100%;
+	list-style-type: none;
+	line-height: 3em;
+}
+
+	.nav-menu ul {
 		list-style: none;
+		margin: 0;
 		padding: 0;
+		background: #222;
+		/* text-align: center; */
 	}
-		nav ul li{
+		.nav-menu ul li{
 			border-bottom: 1px solid #ccc;
+			padding: 15px 10px;
+			font-size: 1.125em;
+			cursor: pointer;
 			text-align: center;
-			padding: 15px 0;
+			font-family: 'Source Sans Pro';
+			color: #23a4cc;
 		}
-			nav ul li a{
+		
+		.nav-menu ul li .fa{
+			display: inline;
+			color:#23a4cc;
+			padding-right: 15px;
+		}
+		
+		.nav-menu ul li a{
 				font-size: 1.125em;
 				text-transform: uppercase;
-				color: #333;		
+				display: inline;		
+				text-decoration: none;
+				color: #23a4cc;
 			}
-			nav ul li a:hover{
+
+			/* .nav-menu ul li a:hover{
 				color: #FF1256;
+				font-weight: bold;
+			} */
+
+			.nav-menu ul li:hover{
+				background: #FF1256;
+				font-weight: bold;
 			}
-	nav i{
-		padding-right: 10px;
-	}
+/* 
+			.i:hover{
+				color: #FF1256;
+				font-weight: bold;
+			} */
 	
 /* Main Content =========================== */
 main {
@@ -267,10 +304,11 @@ main {
 			display: none;
 	}
 
-.feed-item {
+.feed-item clearfix{
 	clear: both;
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
+	padding-bottom: 30%;
 }
 	.feed-type {
 		text-transform: uppercase;
@@ -312,8 +350,13 @@ main {
 
 
 /* CONCERT PAGE ================================ */
-	.concert-item{
-		padding-top: 5%;
+article.feed-item.concert-item{
+	padding-bottom: 150px;
+	border: 2px solid #ddd;
+}	
+
+.concert-item{
+		padding-top: 4%;
 	}
 
 	.concert-item h3{
@@ -323,13 +366,13 @@ main {
 	 	width: 3em;
 	 	height: 3em;
 	 	float: left;
-	 	margin: 0 5% 0 0;
+	 	margin: 0 5% 0 2%;
 	}
 
 	.concert-item p{
 		display: block;
 		margin: 0;
-		line-height: 1;
+		line-height: 1.5;
 	}
 
 	.concert-item:nth-child(7){
@@ -345,6 +388,12 @@ main {
 		width: 75%;
 	}
 
+	/* .buy-tickets{
+		
+	} */
+
+	.buy-tickets 
+
 	.concert-main aside{
 		display: none;
 	}
@@ -357,13 +406,19 @@ main {
 		width: 100%;
 		padding-top: 30px;
 	}
+.contact-info h1{
+	font-size: 2em;
+	text-align: center;
+}
 		.contact-info ul{
 			list-style: none;
 			padding: 0;
+			text-align: justify;
 		}
 			.contact-info ul li{
 				display: inline-block;
 				vertical-align: top;
+				font-size: 1.5em;
 			}
             
 .map-container{
@@ -407,6 +462,7 @@ main {
 }
 .mission{
 	width: 100%;
+	font-size: 1.5em;
 }
 .team{
 	
@@ -425,9 +481,11 @@ main {
 }
 .team-name{
 	margin-bottom: 0;
+	font-size: 1.5em;
 }
 .team-title{
 	margin-top: 0;
+	font-size: 1em;
 }
 .team-description{
 	display: none;
@@ -547,39 +605,78 @@ footer {
 @media (min-width:768px) {
 	/* Header =========================== */
 
-	.main-header{
-		width:94%;
-		max-width:960px;
-		margin:auto;
-		background-color: #ddd;
-		padding: 0 3%;
+	header.main-header{
+		max-width: 100%;
+		margin: auto;
 	}
+
 	#lehua-logo{
 		max-width: 5%;
 		margin: 0 auto;
-		padding: 100px 0;
+		padding: 2% 0;
 	}
 
-	#logo {
-		width: 40%;
-		float: left;
-	}
-	nav {
-		width: 60%;
-		float: right;
-	}
+	/* #unplugged-logo{
+		max-width: 30%;
+		height: auto;
+		padding: 0 2em;
+	} */
 
-	nav ul{
-		margin: 0;
+	.main-header{
+		display: flex;
+		width: 96%;
+		max-height: 200px;
 	}
 	
-	nav ul li {
+	#unplugged-logo{
+		display: none;
+	}
+
+	#unplugged-logo-tablet{
+		display: inline-flex;
+		max-width: 100%;
+	}
+
+	.nav-logo{
+		/* display: inline-flex; */
+		/* flex-wrap: wrap; */
+		width: 30%;
+	}
+
+	.nav-menu{
+		/* display: inline-flex;
+		flex-wrap: wrap; */
+		width: 100%;
+		padding-top: 5px;
+		align-content: center;
+	}
+
+	nav h1 #unplugged-logo-tablet{
+		padding: 0;
+		margin: 0px 20px 0px 0px;
+	}
+	
+	.nav-menu ul{
+		padding: 0 0 25px 20px;
+		align-content: right;
+		float: right;
+	}
+	
+	.nav-menu ul li {
 		display: inline;
-		padding:0 1%;
+		float: center;
+		padding:0 10px;
 		border:none;
-		line-height: 2;
 		position:relative;
 		top:16px;
+	}
+
+	nav ul li a{
+		color: white;
+	}
+
+	nav ul li a .fa{
+		display: inline;
 	}
 	
 
@@ -696,19 +793,20 @@ footer {
 	
 	/* ABOUT PAGE ================================ */
 	.contact-info{
-		width: 40%;
+		width: 96%;
 		float: left;
 	}
 	.map-container{
 		position: relative;
-		padding-bottom: 40%;
+		padding-bottom: 70%;
 		height: 0;
 		overflow: hidden;
-		width: 58%;
+		width: 90%;
 		float: left;
 		border: 1px solid #333;
 		margin-bottom: 40px;
 		margin-top: 30px;
+		padding-left: 10%;
 	}
 		.map-container iframe {
 			position: absolute;
@@ -744,6 +842,7 @@ footer {
 		width: 45%;
 		float: left;
 		margin-right: 2%;
+		padding-top: 10%;
 	}
 
 	.concert-feed .feed-item{
@@ -768,8 +867,6 @@ footer {
 
 }
 
-
-
 @media (min-width:940px) {
 	
 	h1{
@@ -781,16 +878,45 @@ footer {
 	}
 	
 	/* Header =========================== */
-	#logo {
-		width: 30%;
-	}
-	
-	nav {
-		width: 60%;
+	header.main-header{
+		padding-bottom: 1em;
+		max-width: 960px;
 	}
 
-	nav ul li {
+	#unplugged-logo{
+		display: none;
+	}
+	
+	#unplugged-logo-tablet{
+		display: block;
+		/* width: 80%; */
+		margin: 0 10%
+		border: none;
+	}
+
+	.nav-logo{
+		border: none;
+		width: 60%;
+	}
+	
+	.nav-menu {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		vertical-align: middle;
+		float: right;
+		padding: 0;
+	}
+
+	.nav-menu ul{
+		float: left;
+		vertical-align: middle;
+		padding: 20px 0 0 0;
+	}
+
+	.nav ul li {
 		top: 28px;
+		padding: 50px 0 0 0;
 	}
 	
 /*	Main Content =========================== */
@@ -924,6 +1050,13 @@ footer {
 	}
 	
 	
+	/* CONCERT PAGE ====================*/
+	article.feed-item.concert-item{
+		width: 90%;
+		padding-bottom: 80px;
+		border: 2px solid #ddd;
+	}	
+
 	/* Footer =========================== */
 	footer{
 		width: 100%;

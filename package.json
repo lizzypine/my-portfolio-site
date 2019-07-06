@@ -1,0 +1,40 @@
+{
+  "name": "lizzypine-portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:lint",
+    "test:lint": "standard",
+    "test:lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizzypine/my-portfolio-site.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html5",
+    "css",
+    "javascript"
+  ],
+  "author": "Lizzy Pine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizzypine/my-portfolio-site/issues"
+  },
+  "homepage": "https://github.com/lizzypine/my-portfolio-site#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "globals":[
+      "$"
+    ],
+    "ignore": [
+     "js/vendor",
+     "unplugged"
+    ]
+  }
+}

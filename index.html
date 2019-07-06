@@ -6,8 +6,12 @@
         <meta name="Lehua Web Development" content="Affordable custom websites for small businesses in Hawaii">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand|Sorts+Mill+Goudy" rel="stylesheet">
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/ef58e3c399.js"></script>
     </head>
     <body>
             <div class="topnav home">
@@ -20,16 +24,27 @@
             </div>
 
             <section id="header">
-                <img src="img/Lehua-header-logo-mobile.png" img id="img-mobile" alt="Lehua Web Development Logo">
-                <img src="img/lehua-web-development-logo-desktop.jpg" img id="img-tablet-desktop" alt="Lehua Web Development Logo">
+                <a href="index.html"><img src="img/Lehua-header-logo-mobile.png" img id="img-mobile" alt="Lehua Web Development Logo"></a>
+                <a href="index.html"><img src="img/lehua-web-development-logo-desktop.jpg" img id="img-tablet-desktop" 
+                    alt="Lehua Web Development Logo"></a>
             </section>
             
             <section id="work">
-                <div class="full-width">
                     <h1>Featured Work</h1>
-                        <a href="unplugged/index.html"><img src="img/unplugged-thumnail.png" img id= "img-2" alt="Unplugged Website"/a>    
-                        <a href="maile-smith/index.html"><img src="img/maile-smith-thumbnail.png" img id= "img-3" alt="Maile Smith Website"/a>
-                        <a href="rogue-pickings/index.html"><img src="img/rogue-pickings-thumbnail.png" img id= "img-1" alt="Rogue Pickings Website"/a>
+                <div class="full-width work-container-flex-grid-thirds">
+                        <div class="work-sample-col">
+                            <a href="unplugged/index.html"><img src="img/unplugged-thumnail.png" img id= "img-1" alt="Unplugged Website"/a> 
+                        </div>   
+                        <div class="work-sample-col">
+                            <a href="https://lehuaweb.wixsite.com/kekoaspokeshack"><img src="img/kekoas-poke-shack-thumbnail.png" img id= "img-2" 
+                                alt="Kekoa's Poke Shack Website"/a>
+                        </div>
+                        <div class="work-sample-col"> 
+                            <a href="maile-smith/index.html"><img src="img/maile-smith-thumbnail.png" img id= "img-3" alt="Maile Smith Website"/a>
+                        </div>
+                        <div class="work-sample-col">
+                            <a href="rogue-pickings/index.html"><img src="img/rogue-pickings-thumbnail.png" img id= "img-4" alt="Rogue Pickings Website"/a>
+                        </div>
                 </div>                
                 <div class="arrow-up"> 
                     <a href="#"><img src="img-icons/icon-up.png" alt="up" class="up" class="back-to-top"/></a>
@@ -37,26 +52,28 @@
             </section>
 
             <section id="services">
-                <div class="full-width">     
                 <h1>Services</h1>
+                <div class="full-width services-container">     
                     <div class="service-item">
-                        <img src="img-icons/icon-computer.png" img id="responsive-web-design" alt="Computer icon"/>
+                        <img src="img-icons/icon-responsive.png" img id="responsive-web-design" alt="Computer and tablet icon"/>
                         <h2>Responsive Web Design</h2>
                         <p>If you have a vision of what you want your website to look like, 
                             I can use your ideas to create a custom responsive website that brings color, 
                             typography, and layout together.</p>
                     </div>
                     <div class="service-item">
-                        <img src="img-icons/icon-responsive.png" img id="web-development" alt="Computer and tablet icon"/>
-                        <h2>Web Development</h2>
+                        <img src="img-icons/icon-computer.png" img id="web-development" alt="Computer icon"/>
+                        <h2 id="header-web-development">Web Development</h2>
                         <p id="web-development-text">Got a clear design mockup already? I'll bring it to life on your 
-                            custom responsive website that looks great on all devices.</p>
+                            custom responsive website that looks great on all devices. I can also customize a 
+                            website for you through an existing site platform like Wix, Wordpress, or Squarespace. </p>
                     </div>
-                    <div class="service-item">
-                        <img src="img-icons/icon-maintenance.png" img id="website-management" alt="Maintenance icon"/>  
-                        <h2>Website Management</h2>
-                        <p>Have peace of mind knowing that someone is looking out for your 
-                            website's security and keeping it up to date.</p>
+                    <div class="service-item" id="fa-bullseye" id="seo">
+                        <i class="fas fa-bullseye fa-6x"/></i>
+                        <i class="fas fa-bullseye fa-3x"/></i>
+                        <h2>SEO</h2>
+                        <p>Getting your site noticed means your content matters more than ever. 
+                            With a background in journalism, I can write and edit SEO-friendly blog posts, articles, and more.</p>
                     </div>
                 </div>
                 <div class="arrow-up">
@@ -67,9 +84,9 @@
             <section id="contact">
                 <div class="full-width">
                     <h1>Get in Touch</h1>
-                        <p>lehuaweb@gmail.com</p>    
+                        <p>lehuacommunications@gmail.com</p>    
                         <ul>
-                            <li><a href="mailto:lehuaweb@gmail.com">
+                            <li><a href="mailto:lehuacommunications@gmail.com">
                                 <img src="img-icons/icon-gmail.png" img id=gmail alt="Gmail" width="50px" height="50px">
                                 </a>
                             </li>
@@ -85,8 +102,8 @@
             </section>
             
             <footer>
-                <div class="full-width">
-                <p>2018 Lehua Web Development</p>
+                <div class="full-width footer">
+                <p>2019 Lehua Web Development</p>
                 </div>
             </footer>
 

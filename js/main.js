@@ -1,68 +1,48 @@
-$(document).ready(function(){
+var scrollBehavior = function (elementString, controller) {
+  var workScene = new window.ScrollMagic.Scene({
+    triggerElement: elementString,
+    triggerHook: 0.9
+  })
+  workScene.setClassToggle(elementString, 'fade-in').addTo(controller)
+}
 
-    var controller = new ScrollMagic.Controller();
+$(document).ready(function () {
+  var ScrollMagic = window.ScrollMagic
+  var controller = new ScrollMagic.Controller()
 
-    //Build a scene for #work
-    var ourScene = new ScrollMagic.Scene({
-        triggerElement: '#work',
-        triggerHook: 0.9,
-        })
-    .setClassToggle('#work', 'fade-in')
+  // Build a scene for #work
+  scrollBehavior('#work', controller)
 
-    .addTo(controller);
+  // Build a scene for #services
+  scrollBehavior('#services', controller)
 
-    //Build a scene for #services
-    var ourScene = new ScrollMagic.Scene({
-        triggerElement: '#services',
-        triggerHook: 0.9,
-        })
-    .setClassToggle('#services', 'fade-in')
+  // Build a scene for #contact
+  scrollBehavior('#contact', controller)
+})
 
-    .addTo(controller);
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $('a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault()
 
-    //Build a scene for #contact
-    var ourScene = new ScrollMagic.Scene({
-        triggerElement: '#contact',
-        triggerHook: 0.9,
-        })
-    .setClassToggle('#contact', 'fade-in')
+      var hash = this.hash
 
-    .addTo(controller);
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 250, function () {
+        window.location.hash = hash
+      })
+    }
+  })
+})
 
-});
+$(document).ready(function () {
+  var btt = $('.up')
 
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      if (this.hash !== "") {
-
-        event.preventDefault();
-  
-        var hash = this.hash;
-  
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 250, function(){
-     
-          window.location.hash = hash;
-        });
-      }
-    });
-  });
-
-  $(document).ready(function(){
-    var btt = $('.up');
-
-    btt.on('click', function(){
-        $('html, body').animate({
-            scrollTop: 0
-        }, 500);
-    });
-
-    $(window).on('scroll', function(){
-        var self = $(this), 
-            height = self.height(),
-            top = self.scrollTop();
-    })
-  });
+  btt.on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500)
+  })
+})
